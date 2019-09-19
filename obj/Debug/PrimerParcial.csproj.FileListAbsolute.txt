@@ -23,3 +23,5 @@ C:\Users\gilsa\source\repos\PrimerParcial\bin\Debug\ControlzEx.pdb
 C:\Users\gilsa\source\repos\PrimerParcial\bin\Debug\MahApps.Metro.pdb
 C:\Users\gilsa\source\repos\PrimerParcial\bin\Debug\MahApps.Metro.xml
 C:\Users\gilsa\source\repos\PrimerParcial\obj\Debug\App.baml
+C:\Users\gilsa\source\repos\PrimerParcial\obj\Debug\SplashScreen.g.cs
+C:\Users\gilsa\source\repos\PrimerParcial\obj\Debug\SplashScreen.baml

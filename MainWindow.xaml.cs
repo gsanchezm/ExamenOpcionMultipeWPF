@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
 using System.Data.SqlClient;
+using System.IO;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media;
 using MahApps.Metro.Controls;
 
@@ -22,6 +25,8 @@ namespace PrimerParcial
         public int Aciertos { get => aciertos; set => aciertos = value; }
         public int Errores { get => errores; set => errores = value; }
 
+        private static readonly Regex _regex = new Regex("[^0-9]+"); //Expresión regular que indica sólo números
+
         public MainWindow()
         {
             InitializeComponent();
@@ -29,20 +34,16 @@ namespace PrimerParcial
 
         private void BtnCalificar_Click(object sender, RoutedEventArgs e)
         {
-            foreach (StackPanel s in FindVisualChildren<StackPanel>(window))
+            int i = 0;
+            foreach(RadioButton rb in FindVisualChildren<RadioButton>(window))
             {
-                foreach (RadioButton rb in s.Children)
+                if (rb.Name.Contains("Correct") && rb.IsChecked == true)
                 {
-                    if (rb.Name.Contains("Correct") && rb.IsChecked == true)
-                    {
-                        Aciertos++;
-                    }
-                    else
-                    {
-                        Errores++;
-                    }
+                    Aciertos++;
                 }
             }
+
+            Errores = 10 - Aciertos;
 
             MessageBox.Show($"Obtuviste {Aciertos}! respuestas bien y {Errores}! respuestas mal", "Resultado", MessageBoxButton.OK, MessageBoxImage.Information);
             
@@ -76,15 +77,13 @@ namespace PrimerParcial
             }
 
             //Limpiar todos los campos
-            foreach (StackPanel s in FindVisualChildren<StackPanel>(window))
+            foreach (RadioButton rb in FindVisualChildren<RadioButton>(window))
             {
-                foreach (RadioButton rb in s.Children)
-                {
-                    rb.IsChecked = false;
-                    Aciertos=0;
-                    Errores = 0;
-                }
+                rb.IsChecked = false;
             }
+
+            Aciertos = 0;
+            Errores = 0;
 
             foreach (TextBox txt in FindVisualChildren<TextBox>(window))
             {
@@ -139,6 +138,27 @@ namespace PrimerParcial
                     reader.NextResult();
                 }
             }
+        }
+
+        private void TxtId_PreviewTextInput(object sender, System.Windows.Input.TextCompositionEventArgs e)
+        {
+            if (_regex.IsMatch(e.Text))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TxtId_PreviewKeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if (e.Key == Key.Space && txtId.IsFocused == true & e.Key == Key.OemPeriod)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void BtnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
