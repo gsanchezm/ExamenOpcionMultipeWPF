@@ -1,9 +1,9 @@
 C:\Users\gilsa\source\repos\PrimerParcial\bin\Debug\PrimerParcial.exe.config
 C:\Users\gilsa\source\repos\PrimerParcial\bin\Debug\PrimerParcial.exe
 C:\Users\gilsa\source\repos\PrimerParcial\bin\Debug\PrimerParcial.pdb
-C:\Users\gilsa\source\repos\PrimerParcial\obj\Debug\PrimerParcial.csprojAssemblyReference.cache
 C:\Users\gilsa\source\repos\PrimerParcial\obj\Debug\MainWindow.g.cs
 C:\Users\gilsa\source\repos\PrimerParcial\obj\Debug\App.g.cs
+C:\Users\gilsa\source\repos\PrimerParcial\obj\Debug\PrimerParcial_Content.g.cs
 C:\Users\gilsa\source\repos\PrimerParcial\obj\Debug\PrimerParcial_MarkupCompile.cache
 C:\Users\gilsa\source\repos\PrimerParcial\obj\Debug\PrimerParcial_MarkupCompile.lref
 C:\Users\gilsa\source\repos\PrimerParcial\obj\Debug\MainWindow.baml
@@ -11,5 +11,15 @@ C:\Users\gilsa\source\repos\PrimerParcial\obj\Debug\PrimerParcial.g.resources
 C:\Users\gilsa\source\repos\PrimerParcial\obj\Debug\PrimerParcial.Properties.Resources.resources
 C:\Users\gilsa\source\repos\PrimerParcial\obj\Debug\PrimerParcial.csproj.GenerateResource.cache
 C:\Users\gilsa\source\repos\PrimerParcial\obj\Debug\PrimerParcial.csproj.CoreCompileInputs.cache
+C:\Users\gilsa\source\repos\PrimerParcial\obj\Debug\PrimerParcial.csproj.CopyComplete
 C:\Users\gilsa\source\repos\PrimerParcial\obj\Debug\PrimerParcial.exe
 C:\Users\gilsa\source\repos\PrimerParcial\obj\Debug\PrimerParcial.pdb
+C:\Users\gilsa\source\repos\PrimerParcial\bin\Debug\CalificacionesDB.mdb
+C:\Users\gilsa\source\repos\PrimerParcial\obj\Debug\PrimerParcial.csprojAssemblyReference.cache
+C:\Users\gilsa\source\repos\PrimerParcial\bin\Debug\ControlzEx.dll
+C:\Users\gilsa\source\repos\PrimerParcial\bin\Debug\MahApps.Metro.dll
+C:\Users\gilsa\source\repos\PrimerParcial\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\gilsa\source\repos\PrimerParcial\bin\Debug\ControlzEx.pdb
+C:\Users\gilsa\source\repos\PrimerParcial\bin\Debug\MahApps.Metro.pdb
+C:\Users\gilsa\source\repos\PrimerParcial\bin\Debug\MahApps.Metro.xml
+C:\Users\gilsa\source\repos\PrimerParcial\obj\Debug\App.baml
